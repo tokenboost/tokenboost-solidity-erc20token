@@ -12,7 +12,7 @@ contract PauseWidgetRenderer is ERC20TokenWidgetRenderer {
     string public constant PAUSE_CONFIRM = "pause_confirm";
 
     function render(string _locale, ERC20Token _token) public view returns (string) {
-        if (_token.pausable() && !_token.paused()) {
+        if (_token.pausable() && !_token.paused() && _token.activated()) {
             Elements.Element[] memory elements = new Elements.Element[](1);
             elements[0] = Elements.Element(
                 true,

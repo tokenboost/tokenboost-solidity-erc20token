@@ -2,9 +2,11 @@ pragma solidity ^0.4.24;
 
 import "./ERC20TokenWidgetRenderer.sol";
 import "tokenboost-solidity/contracts/widget/Widgets.sol";
+import "zeppelin-solidity/contracts/token/ERC20/DetailedERC20.sol";
 
 contract TotalSupplyWidgetRenderer is ERC20TokenWidgetRenderer {
     using Widgets for Widgets.Widget;
+    using strings for *;
     using UintUtils for uint;
 
     string public constant TOTAL_SUPPLY = "total_supply";
@@ -16,7 +18,7 @@ contract TotalSupplyWidgetRenderer is ERC20TokenWidgetRenderer {
         elements[0] = Elements.Element(
             true,
             TOTAL_SUPPLY,
-            "integer",
+            "token".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
             resources[_locale][TOTAL_SUPPLY],
             _token.totalSupply().toString(),
             Actions.empty(),

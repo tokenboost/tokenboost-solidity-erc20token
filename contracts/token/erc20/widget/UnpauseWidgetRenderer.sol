@@ -12,7 +12,7 @@ contract UnpauseWidgetRenderer is ERC20TokenWidgetRenderer {
     string public constant UNPAUSE_CONFIRM = "unpause_confirm";
 
     function render(string _locale, ERC20Token _token) public view returns (string) {
-        if (_token.paused()) {
+        if (_token.paused() && _token.activated()) {
             Elements.Element[] memory elements = new Elements.Element[](1);
             elements[0] = Elements.Element(
                 true,

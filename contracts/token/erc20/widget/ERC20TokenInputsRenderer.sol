@@ -6,6 +6,7 @@ import "tokenboost-solidity/contracts/utils/UintUtils.sol";
 import "tokenboost-solidity/contracts/utils/BoolUtils.sol";
 import "tokenboost-solidity/contracts/utils/StringUtils.sol";
 import "tokenboost-solidity/contracts/widget/Elements.sol";
+import "zeppelin-solidity/contracts/token/ERC20/DetailedERC20.sol";
 
 contract ERC20TokenInputsRenderer is ERC20TokenWidgetRenderer {
     using strings for *;
@@ -56,7 +57,7 @@ contract ERC20TokenInputsRenderer is ERC20TokenWidgetRenderer {
         elements[3] = Elements.Element(
             true,
             INITIAL_SUPPLY,
-            "numberEdit",
+            "tokenEdit".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
             resources[_locale][INITIAL_SUPPLY],
             _token.initialSupply().toString(),
             Actions.empty(),

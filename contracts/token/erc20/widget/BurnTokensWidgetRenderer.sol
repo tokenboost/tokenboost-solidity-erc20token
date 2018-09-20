@@ -21,12 +21,10 @@ contract BurnTokensWidgetRenderer is ERC20TokenWidgetRenderer {
     function render(string _locale, ERC20Token _token) public view returns (string) {
         if (_token.burnable() && _token.activated()) {
             Elements.Element[] memory elements = new Elements.Element[](3);
-            DetailedERC20 erc20 = DetailedERC20(_token);
-            uint256 decimals = uint256(erc20.decimals());
             elements[0] = Elements.Element(
                 true,
                 BURNABLE_ETH,
-                "token".toSlice().concat(decimals.toString().toSlice()),
+                "token".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
                 resources[_locale][BURNABLE_ETH],
                 _token.balanceOf(tx.origin).toString(),
                 Actions.empty(),
@@ -35,7 +33,7 @@ contract BurnTokensWidgetRenderer is ERC20TokenWidgetRenderer {
             elements[1] = Elements.Element(
                 true,
                 AMOUNT,
-                "tokenEdit".toSlice().concat(decimals.toString().toSlice()),
+                "tokenEdit".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
                 resources[_locale][AMOUNT],
                 "0",
                 Actions.empty(),

@@ -20,8 +20,6 @@ contract TransferWidgetRenderer is ERC20TokenWidgetRenderer {
     function render(string _locale, ERC20Token _token) public view returns (string) {
         if (_token.activated()) {
             Elements.Element[] memory elements = new Elements.Element[](3);
-            DetailedERC20 erc20 = DetailedERC20(_token);
-            uint256 decimals = uint256(erc20.decimals());
             elements[0] = Elements.Element(
                 true,
                 RECEIVER,
@@ -34,7 +32,7 @@ contract TransferWidgetRenderer is ERC20TokenWidgetRenderer {
             elements[1] = Elements.Element(
                 true,
                 AMOUNT,
-                "tokenEdit".toSlice().concat(decimals.toString().toSlice()),
+                "tokenEdit".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
                 resources[_locale][AMOUNT],
                 "0",
                 Actions.empty(),

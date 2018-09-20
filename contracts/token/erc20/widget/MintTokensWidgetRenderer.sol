@@ -25,15 +25,13 @@ contract MintTokensWidgetRenderer is ERC20TokenWidgetRenderer {
             uint maxMintable = _token.maxMintable();
             uint totalSupply = _token.totalSupply();
             uint mintableEth = maxMintable > totalSupply ? maxMintable.sub(totalSupply) : 0;
-            DetailedERC20 erc20 = DetailedERC20(_token);
-            uint256 decimals = uint256(erc20.decimals());
             Elements.Element[] memory elements = new Elements.Element[](4);
             elements[0] = Elements.Element(
                 true,
                 MINTABLE_ETH,
-                "token".toSlice().concat(decimals.toString().toSlice()),
+                "token".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
                 resources[_locale][MINTABLE_ETH],
-                mintableEth.toString(),
+                maxMintable == 0 ? "∞" : mintableEth.toString(),
                 Actions.empty(),
                 Tables.empty()
             );
@@ -49,7 +47,7 @@ contract MintTokensWidgetRenderer is ERC20TokenWidgetRenderer {
             elements[2] = Elements.Element(
                 true,
                 AMOUNT,
-                "tokenEdit".toSlice().concat(decimals.toString().toSlice()),
+                "tokenEdit".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
                 resources[_locale][AMOUNT],
                 "0",
                 Actions.empty(),

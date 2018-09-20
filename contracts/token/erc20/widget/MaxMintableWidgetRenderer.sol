@@ -20,14 +20,12 @@ contract MaxMintableWidgetRenderer is ERC20TokenWidgetRenderer {
     function render(string _locale, ERC20Token _token) public view returns (string) {
         if (_token.mintable() && !_token.activated()) {
             Elements.Element[] memory elements = new Elements.Element[](2);
-            DetailedERC20 erc20 = DetailedERC20(_token);
-            uint256 decimals = uint256(erc20.decimals());
             elements[0] = Elements.Element(
                 true,
                 AMOUNT,
-                "tokenEdit".toSlice().concat(decimals.toString().toSlice()),
+                "tokenEdit".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
                 resources[_locale][AMOUNT],
-                "0",
+                _token.maxMintable().toString(),
                 Actions.empty(),
                 Tables.empty()
             );
