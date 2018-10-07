@@ -12,7 +12,7 @@ const ERC20TokenRenderer = artifacts.require("ERC20TokenRenderer");
 
 module.exports = function(deployer) {
     return deployer.then(async () => {
-        let erc20TokenRenderer = await deployer.deploy(ERC20TokenRenderer);
+        let erc20TokenRenderer = await deployer.deploy(ERC20TokenRenderer, {overwrite: false});
         await Promise.all([
             await erc20TokenRenderer.setAdminWidgetRenderers([
                 TotalSupplyWidgetRenderer.address,
