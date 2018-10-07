@@ -73,7 +73,7 @@ contract ERC20Token is Token, RBACMintableToken, BurnableToken, PausableToken {
         maxMintable = _maxMintable;
     }
 
-    function activate() public returns (bool) {
+    function activate() whenNotActivated public returns (bool) {
         totalSupply_ = initialSupply;
         balances[owner] = totalSupply_;
         return super.activate();
