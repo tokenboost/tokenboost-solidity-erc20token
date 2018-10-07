@@ -1,6 +1,7 @@
 const BurnTokensWidgetRenderer = artifacts.require("BurnTokensWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up BurnTokensWidgetRenderer...");
     try {
         let renderer = await BurnTokensWidgetRenderer.deployed();
         await Promise.all([

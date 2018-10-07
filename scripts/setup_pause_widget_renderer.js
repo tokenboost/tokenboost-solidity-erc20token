@@ -1,6 +1,7 @@
 const PauseWidgetRenderer = artifacts.require("PauseWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up PauseWidgetRenderer...");
     try {
         let renderer = await PauseWidgetRenderer.deployed();
         await Promise.all([

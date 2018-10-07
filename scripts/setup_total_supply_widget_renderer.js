@@ -1,6 +1,7 @@
 const TotalSupplyWidgetRenderer = artifacts.require("TotalSupplyWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up TotalSupplyWidgetRenderer...");
     try {
         let renderer = await TotalSupplyWidgetRenderer.deployed();
         await Promise.all([

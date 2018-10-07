@@ -1,6 +1,7 @@
 const MyBalanceWidgetRenderer = artifacts.require("MyBalanceWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up MyBalanceWidgetRenderer...");
     try {
         let renderer = await MyBalanceWidgetRenderer.deployed();
         await Promise.all([

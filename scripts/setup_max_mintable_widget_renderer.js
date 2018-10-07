@@ -1,6 +1,7 @@
 const MaxMintableWidgetRenderer = artifacts.require("MaxMintableWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up MaxMintableWidgetRenderer...");
     try {
         let renderer = await MaxMintableWidgetRenderer.deployed();
         await Promise.all([

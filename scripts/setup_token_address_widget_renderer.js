@@ -1,6 +1,7 @@
 const TokenAddressWidgetRenderer = artifacts.require("TokenAddressWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up TokenAddressWidgetRenderer...");
     try {
         let renderer = await TokenAddressWidgetRenderer.deployed();
         await Promise.all([

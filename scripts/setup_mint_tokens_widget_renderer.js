@@ -1,6 +1,7 @@
 const MintTokensWidgetRenderer = artifacts.require("MintTokensWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up MintTokensWidgetRenderer...");
     try {
         let renderer = await MintTokensWidgetRenderer.deployed();
         await Promise.all([

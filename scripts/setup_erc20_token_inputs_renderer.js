@@ -1,6 +1,7 @@
 const ERC20TokenInputsRenderer = artifacts.require("ERC20TokenInputsRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up ERC20TokenInputsRenderer...");
     try {
         let renderer = await ERC20TokenInputsRenderer.deployed();
         await Promise.all([

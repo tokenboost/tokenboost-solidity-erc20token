@@ -1,6 +1,7 @@
 const TransferWidgetRenderer = artifacts.require("TransferWidgetRenderer");
 
 module.exports = async function (callback) {
+    console.log("Setting up TransferWidgetRenderer...");
     try {
         let renderer = await TransferWidgetRenderer.deployed();
         await Promise.all([
