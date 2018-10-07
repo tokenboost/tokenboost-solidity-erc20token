@@ -3,14 +3,14 @@ pragma solidity ^0.4.24;
 import "./ERC20TokenWidgetRenderer.sol";
 import "./ERC20TokenInputsRenderer.sol";
 
-contract ERC20TokenRenderer {
+contract ERC20TokenRenderer is Ownable {
     using strings for *;
 
     ERC20TokenWidgetRenderer[] adminWidgetRenderers;
     ERC20TokenWidgetRenderer[] userWidgetRenderers;
     ERC20TokenInputsRenderer public inputsRenderer;
 
-    function setAdminWidgetRenderers(ERC20TokenWidgetRenderer[] _renderers) public {
+    function setAdminWidgetRenderers(ERC20TokenWidgetRenderer[] _renderers) onlyOwner public {
         adminWidgetRenderers = _renderers;
     }
 
@@ -22,7 +22,7 @@ contract ERC20TokenRenderer {
         return adminWidgetRenderers[index];
     }
 
-    function setUserWidgetRenderers(ERC20TokenWidgetRenderer[] _renderers) public {
+    function setUserWidgetRenderers(ERC20TokenWidgetRenderer[] _renderers) onlyOwner public {
         userWidgetRenderers = _renderers;
     }
 
@@ -34,7 +34,7 @@ contract ERC20TokenRenderer {
         return userWidgetRenderers[index];
     }
 
-    function setInputsRenderer(ERC20TokenInputsRenderer _renderer) public {
+    function setInputsRenderer(ERC20TokenInputsRenderer _renderer) onlyOwner public {
         inputsRenderer = _renderer;
     }
 
