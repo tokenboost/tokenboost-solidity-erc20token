@@ -169,7 +169,7 @@
         "id": 274,
         "nodeType": "ImportDirective",
         "scope": 291,
-        "sourceUnit": 3102,
+        "sourceUnit": 3196,
         "src": "26:62:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -194,10 +194,10 @@
               "id": 276,
               "name": "Localizable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3101,
+              "referencedDeclaration": 3195,
               "src": "155:11:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Localizable_$3101",
+                "typeIdentifier": "t_contract$_Localizable_$3195",
                 "typeString": "contract Localizable"
               }
             },
@@ -207,8 +207,8 @@
           }
         ],
         "contractDependencies": [
-          3101,
-          4098
+          3195,
+          4192
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -216,8 +216,8 @@
         "id": 290,
         "linearizedBaseContracts": [
           290,
-          3101,
-          4098
+          3195,
+          4192
         ],
         "name": "ERC20TokenWidgetRenderer",
         "nodeType": "ContractDefinition",
@@ -397,7 +397,7 @@
         "id": 274,
         "nodeType": "ImportDirective",
         "scope": 291,
-        "sourceUnit": 3102,
+        "sourceUnit": 3196,
         "src": "26:62:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -422,10 +422,10 @@
               "id": 276,
               "name": "Localizable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3101,
+              "referencedDeclaration": 3195,
               "src": "155:11:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Localizable_$3101",
+                "typeIdentifier": "t_contract$_Localizable_$3195",
                 "typeString": "contract Localizable"
               }
             },
@@ -435,8 +435,8 @@
           }
         ],
         "contractDependencies": [
-          3101,
-          4098
+          3195,
+          4192
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -444,8 +444,8 @@
         "id": 290,
         "linearizedBaseContracts": [
           290,
-          3101,
-          4098
+          3195,
+          4192
         ],
         "name": "ERC20TokenWidgetRenderer",
         "nodeType": "ContractDefinition",
@@ -604,5 +604,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-20T21:25:35.802Z"
+  "updatedAt": "2018-09-21T11:40:54.203Z"
 }

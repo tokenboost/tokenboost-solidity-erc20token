@@ -150,14 +150,14 @@
     "absolutePath": "tokenboost-solidity/contracts/Contract.sol",
     "exportedSymbols": {
       "Contract": [
-        532
+        626
       ]
     },
-    "id": 533,
+    "id": 627,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 498,
+        "id": 592,
         "literals": [
           "solidity",
           "^",
@@ -170,10 +170,10 @@
       {
         "absolutePath": "zeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "zeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 499,
+        "id": 593,
         "nodeType": "ImportDirective",
-        "scope": 533,
-        "sourceUnit": 4099,
+        "scope": 627,
+        "sourceUnit": 4193,
         "src": "26:59:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -181,10 +181,10 @@
       {
         "absolutePath": "zeppelin-solidity/contracts/introspection/SupportsInterfaceWithLookup.sol",
         "file": "zeppelin-solidity/contracts/introspection/SupportsInterfaceWithLookup.sol",
-        "id": 500,
+        "id": 594,
         "nodeType": "ImportDirective",
-        "scope": 533,
-        "sourceUnit": 3859,
+        "scope": 627,
+        "sourceUnit": 3953,
         "src": "86:83:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -192,10 +192,10 @@
       {
         "absolutePath": "tokenboost-solidity/contracts/template/Template.sol",
         "file": "./template/Template.sol",
-        "id": 501,
+        "id": 595,
         "nodeType": "ImportDirective",
-        "scope": 533,
-        "sourceUnit": 737,
+        "scope": 627,
+        "sourceUnit": 831,
         "src": "170:33:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -206,17 +206,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 502,
+              "id": 596,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4098,
+              "referencedDeclaration": 4192,
               "src": "226:7:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$4098",
+                "typeIdentifier": "t_contract$_Ownable_$4192",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 503,
+            "id": 597,
             "nodeType": "InheritanceSpecifier",
             "src": "226:7:4"
           },
@@ -224,45 +224,45 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 504,
+              "id": 598,
               "name": "SupportsInterfaceWithLookup",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3858,
+              "referencedDeclaration": 3952,
               "src": "235:27:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SupportsInterfaceWithLookup_$3858",
+                "typeIdentifier": "t_contract$_SupportsInterfaceWithLookup_$3952",
                 "typeString": "contract SupportsInterfaceWithLookup"
               }
             },
-            "id": 505,
+            "id": 599,
             "nodeType": "InheritanceSpecifier",
             "src": "235:27:4"
           }
         ],
         "contractDependencies": [
-          3807,
-          3858,
-          4098
+          3901,
+          3952,
+          4192
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 532,
+        "id": 626,
         "linearizedBaseContracts": [
-          532,
-          3858,
-          3807,
-          4098
+          626,
+          3952,
+          3901,
+          4192
         ],
         "name": "Contract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 508,
+            "id": 602,
             "name": "InterfaceId_Contract",
             "nodeType": "VariableDeclaration",
-            "scope": 532,
+            "scope": 626,
             "src": "421:56:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -271,7 +271,7 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 506,
+              "id": 600,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
               "src": "421:6:4",
@@ -283,7 +283,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30783631323565646535",
-              "id": 507,
+              "id": 601,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -302,26 +302,26 @@
           },
           {
             "constant": false,
-            "id": 510,
+            "id": 604,
             "name": "template",
             "nodeType": "VariableDeclaration",
-            "scope": 532,
+            "scope": 626,
             "src": "484:24:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Template_$736",
+              "typeIdentifier": "t_contract$_Template_$830",
               "typeString": "contract Template"
             },
             "typeName": {
               "contractScope": null,
-              "id": 509,
+              "id": 603,
               "name": "Template",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 736,
+              "referencedDeclaration": 830,
               "src": "484:8:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Template_$736",
+                "typeIdentifier": "t_contract$_Template_$830",
                 "typeString": "contract Template"
               }
             },
@@ -330,28 +330,28 @@
           },
           {
             "body": {
-              "id": 530,
+              "id": 624,
               "nodeType": "Block",
               "src": "550:123:4",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 520,
+                    "id": 614,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 515,
+                      "id": 609,
                       "name": "template",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 510,
+                      "referencedDeclaration": 604,
                       "src": "560:8:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Template_$736",
+                        "typeIdentifier": "t_contract$_Template_$830",
                         "typeString": "contract Template"
                       }
                     },
@@ -364,18 +364,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 517,
+                            "id": 611,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4892,
+                            "referencedDeclaration": 4986,
                             "src": "580:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 518,
+                          "id": 612,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -397,18 +397,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 516,
+                        "id": 610,
                         "name": "Template",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 736,
+                        "referencedDeclaration": 830,
                         "src": "571:8:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Template_$736_$",
+                          "typeIdentifier": "t_type$_t_contract$_Template_$830_$",
                           "typeString": "type(contract Template)"
                         }
                       },
-                      "id": 519,
+                      "id": 613,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -418,35 +418,35 @@
                       "nodeType": "FunctionCall",
                       "src": "571:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Template_$736",
+                        "typeIdentifier": "t_contract$_Template_$830",
                         "typeString": "contract Template"
                       }
                     },
                     "src": "560:31:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Template_$736",
+                      "typeIdentifier": "t_contract$_Template_$830",
                       "typeString": "contract Template"
                     }
                   },
-                  "id": 521,
+                  "id": 615,
                   "nodeType": "ExpressionStatement",
                   "src": "560:31:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 524,
+                    "id": 618,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 522,
+                      "id": 616,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4016,
+                      "referencedDeclaration": 4110,
                       "src": "601:5:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -457,11 +457,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 523,
+                      "id": 617,
                       "name": "_owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 606,
                       "src": "609:6:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -474,7 +474,7 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 525,
+                  "id": 619,
                   "nodeType": "ExpressionStatement",
                   "src": "601:14:4"
                 },
@@ -484,11 +484,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 527,
+                        "id": 621,
                         "name": "InterfaceId_Contract",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 508,
+                        "referencedDeclaration": 602,
                         "src": "645:20:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -503,18 +503,18 @@
                           "typeString": "bytes4"
                         }
                       ],
-                      "id": 526,
+                      "id": 620,
                       "name": "_registerInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3857,
+                      "referencedDeclaration": 3951,
                       "src": "626:18:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$returns$__$",
                         "typeString": "function (bytes4)"
                       }
                     },
-                    "id": 528,
+                    "id": 622,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -528,14 +528,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 529,
+                  "id": 623,
                   "nodeType": "ExpressionStatement",
                   "src": "626:40:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 531,
+            "id": 625,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -543,15 +543,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 513,
+              "id": 607,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 512,
+                  "id": 606,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 531,
+                  "scope": 625,
                   "src": "527:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -560,7 +560,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 511,
+                    "id": 605,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "527:7:4",
@@ -577,19 +577,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 514,
+              "id": 608,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "550:0:4"
             },
-            "scope": 532,
+            "scope": 626,
             "src": "515:158:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 533,
+        "scope": 627,
         "src": "205:470:4"
       }
     ],
@@ -599,14 +599,14 @@
     "absolutePath": "tokenboost-solidity/contracts/Contract.sol",
     "exportedSymbols": {
       "Contract": [
-        532
+        626
       ]
     },
-    "id": 533,
+    "id": 627,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 498,
+        "id": 592,
         "literals": [
           "solidity",
           "^",
@@ -619,10 +619,10 @@
       {
         "absolutePath": "zeppelin-solidity/contracts/ownership/Ownable.sol",
         "file": "zeppelin-solidity/contracts/ownership/Ownable.sol",
-        "id": 499,
+        "id": 593,
         "nodeType": "ImportDirective",
-        "scope": 533,
-        "sourceUnit": 4099,
+        "scope": 627,
+        "sourceUnit": 4193,
         "src": "26:59:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -630,10 +630,10 @@
       {
         "absolutePath": "zeppelin-solidity/contracts/introspection/SupportsInterfaceWithLookup.sol",
         "file": "zeppelin-solidity/contracts/introspection/SupportsInterfaceWithLookup.sol",
-        "id": 500,
+        "id": 594,
         "nodeType": "ImportDirective",
-        "scope": 533,
-        "sourceUnit": 3859,
+        "scope": 627,
+        "sourceUnit": 3953,
         "src": "86:83:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -641,10 +641,10 @@
       {
         "absolutePath": "tokenboost-solidity/contracts/template/Template.sol",
         "file": "./template/Template.sol",
-        "id": 501,
+        "id": 595,
         "nodeType": "ImportDirective",
-        "scope": 533,
-        "sourceUnit": 737,
+        "scope": 627,
+        "sourceUnit": 831,
         "src": "170:33:4",
         "symbolAliases": [],
         "unitAlias": ""
@@ -655,17 +655,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 502,
+              "id": 596,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4098,
+              "referencedDeclaration": 4192,
               "src": "226:7:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$4098",
+                "typeIdentifier": "t_contract$_Ownable_$4192",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 503,
+            "id": 597,
             "nodeType": "InheritanceSpecifier",
             "src": "226:7:4"
           },
@@ -673,45 +673,45 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 504,
+              "id": 598,
               "name": "SupportsInterfaceWithLookup",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3858,
+              "referencedDeclaration": 3952,
               "src": "235:27:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_SupportsInterfaceWithLookup_$3858",
+                "typeIdentifier": "t_contract$_SupportsInterfaceWithLookup_$3952",
                 "typeString": "contract SupportsInterfaceWithLookup"
               }
             },
-            "id": 505,
+            "id": 599,
             "nodeType": "InheritanceSpecifier",
             "src": "235:27:4"
           }
         ],
         "contractDependencies": [
-          3807,
-          3858,
-          4098
+          3901,
+          3952,
+          4192
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 532,
+        "id": 626,
         "linearizedBaseContracts": [
-          532,
-          3858,
-          3807,
-          4098
+          626,
+          3952,
+          3901,
+          4192
         ],
         "name": "Contract",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 508,
+            "id": 602,
             "name": "InterfaceId_Contract",
             "nodeType": "VariableDeclaration",
-            "scope": 532,
+            "scope": 626,
             "src": "421:56:4",
             "stateVariable": true,
             "storageLocation": "default",
@@ -720,7 +720,7 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 506,
+              "id": 600,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
               "src": "421:6:4",
@@ -732,7 +732,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30783631323565646535",
-              "id": 507,
+              "id": 601,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -751,26 +751,26 @@
           },
           {
             "constant": false,
-            "id": 510,
+            "id": 604,
             "name": "template",
             "nodeType": "VariableDeclaration",
-            "scope": 532,
+            "scope": 626,
             "src": "484:24:4",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Template_$736",
+              "typeIdentifier": "t_contract$_Template_$830",
               "typeString": "contract Template"
             },
             "typeName": {
               "contractScope": null,
-              "id": 509,
+              "id": 603,
               "name": "Template",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 736,
+              "referencedDeclaration": 830,
               "src": "484:8:4",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Template_$736",
+                "typeIdentifier": "t_contract$_Template_$830",
                 "typeString": "contract Template"
               }
             },
@@ -779,28 +779,28 @@
           },
           {
             "body": {
-              "id": 530,
+              "id": 624,
               "nodeType": "Block",
               "src": "550:123:4",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 520,
+                    "id": 614,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 515,
+                      "id": 609,
                       "name": "template",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 510,
+                      "referencedDeclaration": 604,
                       "src": "560:8:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Template_$736",
+                        "typeIdentifier": "t_contract$_Template_$830",
                         "typeString": "contract Template"
                       }
                     },
@@ -813,18 +813,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 517,
+                            "id": 611,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4892,
+                            "referencedDeclaration": 4986,
                             "src": "580:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 518,
+                          "id": 612,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -846,18 +846,18 @@
                             "typeString": "address"
                           }
                         ],
-                        "id": 516,
+                        "id": 610,
                         "name": "Template",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 736,
+                        "referencedDeclaration": 830,
                         "src": "571:8:4",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Template_$736_$",
+                          "typeIdentifier": "t_type$_t_contract$_Template_$830_$",
                           "typeString": "type(contract Template)"
                         }
                       },
-                      "id": 519,
+                      "id": 613,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -867,35 +867,35 @@
                       "nodeType": "FunctionCall",
                       "src": "571:20:4",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Template_$736",
+                        "typeIdentifier": "t_contract$_Template_$830",
                         "typeString": "contract Template"
                       }
                     },
                     "src": "560:31:4",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Template_$736",
+                      "typeIdentifier": "t_contract$_Template_$830",
                       "typeString": "contract Template"
                     }
                   },
-                  "id": 521,
+                  "id": 615,
                   "nodeType": "ExpressionStatement",
                   "src": "560:31:4"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 524,
+                    "id": 618,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 522,
+                      "id": 616,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4016,
+                      "referencedDeclaration": 4110,
                       "src": "601:5:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -906,11 +906,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 523,
+                      "id": 617,
                       "name": "_owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 512,
+                      "referencedDeclaration": 606,
                       "src": "609:6:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -923,7 +923,7 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 525,
+                  "id": 619,
                   "nodeType": "ExpressionStatement",
                   "src": "601:14:4"
                 },
@@ -933,11 +933,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 527,
+                        "id": 621,
                         "name": "InterfaceId_Contract",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 508,
+                        "referencedDeclaration": 602,
                         "src": "645:20:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -952,18 +952,18 @@
                           "typeString": "bytes4"
                         }
                       ],
-                      "id": 526,
+                      "id": 620,
                       "name": "_registerInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3857,
+                      "referencedDeclaration": 3951,
                       "src": "626:18:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_bytes4_$returns$__$",
                         "typeString": "function (bytes4)"
                       }
                     },
-                    "id": 528,
+                    "id": 622,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -977,14 +977,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 529,
+                  "id": 623,
                   "nodeType": "ExpressionStatement",
                   "src": "626:40:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 531,
+            "id": 625,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -992,15 +992,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 513,
+              "id": 607,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 512,
+                  "id": 606,
                   "name": "_owner",
                   "nodeType": "VariableDeclaration",
-                  "scope": 531,
+                  "scope": 625,
                   "src": "527:14:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1009,7 +1009,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 511,
+                    "id": 605,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "527:7:4",
@@ -1026,19 +1026,19 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 514,
+              "id": 608,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "550:0:4"
             },
-            "scope": 532,
+            "scope": 626,
             "src": "515:158:4",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 533,
+        "scope": 627,
         "src": "205:470:4"
       }
     ],
@@ -1050,5 +1050,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-09-20T21:25:35.803Z"
+  "updatedAt": "2018-09-21T11:40:54.209Z"
 }

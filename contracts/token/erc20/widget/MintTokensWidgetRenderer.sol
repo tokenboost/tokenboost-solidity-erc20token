@@ -31,7 +31,7 @@ contract MintTokensWidgetRenderer is ERC20TokenWidgetRenderer {
                 MINTABLE_ETH,
                 "token".toSlice().concat(uint(_token.decimals()).toString().toSlice()),
                 resources[_locale][MINTABLE_ETH],
-                maxMintable == 0 ? "∞" : mintableEth.toString(),
+                maxMintable == 0 ? '"∞"' : mintableEth.toString(),
                 Actions.empty(),
                 Tables.empty()
             );
