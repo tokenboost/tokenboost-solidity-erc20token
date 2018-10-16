@@ -17,6 +17,8 @@ module.exports = function(deployer) {
             await erc20TokenRenderer.setAdminWidgetRenderers([
                 TotalSupplyWidgetRenderer.address,
                 TokenAddressWidgetRenderer.address,
+                MyBalanceWidgetRenderer.address,
+                TransferWidgetRenderer.address,
                 MaxMintableWidgetRenderer.address,
                 MintTokensWidgetRenderer.address,
                 BurnTokensWidgetRenderer.address,
