@@ -23,7 +23,7 @@ contract TransferWidgetRenderer is ERC20TokenWidgetRenderer {
             elements[0] = Elements.Element(
                 true,
                 RECEIVER,
-                "address",
+                "addressEdit",
                 resources[_locale][RECEIVER],
                 '""',
                 Actions.empty(),
